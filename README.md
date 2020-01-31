@@ -1,6 +1,8 @@
 
 # How to run:
 
+1) Clone this repo
+
 1) Create new project on Google Cloud, grant it permissions for Google Sheets API (https://console.cloud.google.com/apis/dashboard -> "Enable APIs and services"), create new service account - save it's "email" address, will be needed later
 
 2) Save .json with credentials for that service account
