@@ -1,3 +1,7 @@
+Simple Telegram bot writtern in dart for purposes of Ingress First Saturdays.
+
+Data are send by field agents via Telegram and saved to provided Google Sheet.
+
 
 # How to run:
 
@@ -77,3 +81,10 @@ Example Sheet with extra fuctions (don't touch list names unless you change them
 2) Type ```/upload <your stats copied from Ingress>``` in one message
 
 3) And that it. Well there's ```/pomoc``` which takes image ukazka.png (not included in this repo) and sends it with some instructions how to use this bot, and ```/info``` which taktes text from file uvodniInfo and sends it to the user.
+
+
+
+#
+Written by @Vykend
+
+Resist!
