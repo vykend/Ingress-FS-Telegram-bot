@@ -6,15 +6,15 @@
 2) Save .json with credentials for that service account
 
 3) Next to ```../bin``` create ```../database``` with the following files:
-		a) ```credentials``` - file with credentials for service account
-		b) ```admins``` - file for storing TG usernames of users with permission to do admin commands
-		c) ```agentsOnStart``` - empty file - stores names of agents that submitted stats at the start of the FS
-		d) ```agentsOnEnd``` - empty file - stores names of agents that submitted stats at the end of the FS
-		e) ```agentsOnEndButNotOnStartCount``` - empty file - stores number of agents that submitted stats at the end but not at the start
-		f) ```currentRow``` - empty file
-		g) ```spreadsheet``` - cannot be empty, put some ID there of bot will crash on start - stores id of actual Google Sheet
-		h) ```telegramToken``` - put your bot TG access token here, talk to @BotFather on TG to get your token
-		i) ```uvodniText``` - text to be printed with /info command, sent to TG as Markdown
+ - ```credentials``` - file with credentials for service account
+ - ```admins``` - file for storing TG usernames of users with permission to do admin commands
+ - ```agentsOnStart``` - empty file - stores names of agents that submitted stats at the start of the FS
+ - ```agentsOnEnd``` - empty file - stores names of agents that submitted stats at the end of the FS
+ - ```agentsOnEndButNotOnStartCount``` - empty file - stores number of agents that submitted stats at the end but not at the start
+ - ```currentRow``` - empty file
+ - ```spreadsheet``` - cannot be empty, put some ID there of bot will crash on start - stores id of actual Google Sheet
+ - ```telegramToken``` - put your bot TG access token here, talk to @BotFather on TG to get your token
+ - ```uvodniText``` - text to be printed with /info command, sent to TG as Markdown
 
 	Those files are not on github for obvious reasons. Well...it should be in real SQL database or something but I'm too lazy to do that.
 		
