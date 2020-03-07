@@ -49,7 +49,7 @@ bool languageCheck(var data) {
 
 //since telegram replaces tabs with spaces parsing is tinkered together in weird ways, it works for now, dont touch it
 Future<void> processData(var message) async {
-	await log.info("Message from: " + message.from.username + ", message text: " + message.text); //debug purposes
+	//await log.info("Message from: " + message.from.username + ", message text: " + message.text); //debug purposes - removed, because when user without @tg-name sends message, username is undefined and error is thrown
 	
 	//if we currently dont accept -> reject
 	if(acceptStart == false && acceptEnd == false) {
@@ -354,6 +354,11 @@ void main() async {
 	
 	teledart
 		.onMessage(entityType: 'bot_command', keyword: 'upload')
+		.listen(((message) => TimeFunction(message)
+		));
+		
+	teledart
+		.onMessage(entityType: 'bot_command', keyword: 'Upload')
 		.listen(((message) => TimeFunction(message)
 		));
 	
